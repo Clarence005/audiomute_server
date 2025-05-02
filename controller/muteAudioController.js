@@ -28,7 +28,7 @@ const muteAudioController = (req, res) => {
     ])
     .output(outputPath)
     .on('end', () => {
-      res.json({ mutedUrl: 'http://localhost:5000/muted/playlist_muted.m3u8' });
+      res.json({ mutedUrl: 'muted/playlist_muted.m3u8' });
     })
     .on('error', (err) => {
       console.error(err);
